@@ -2,12 +2,17 @@
 
 ## Project Work Summary
 
-I worked on MadridStats as an extracurricular technological activity centered on soccer analytics engineering. My work focused on building a custom data pipeline, shaping the system structure, defining the frontend product direction, and preparing documentation that presents the project professionally for academic review.
+I worked on MadridStats as an extracurricular technological activity centered on soccer analytics engineering. My work focused on building a custom data pipeline from scratch, shaping the system structure, defining the frontend product direction, and preparing documentation that presents the project professionally for academic review.
 
 ## Project Evidence
 
 - Public project reference: [madridstats.com](https://madridstats.com)
 - Development of a custom soccer analytics platform focused on Real Madrid data
+- Independent implementation of the pipeline, application architecture, and supporting systems
+- Python and FastAPI scraper and service layer development
+- React and TypeScript frontend application development
+- PostgreSQL relational database design hosted with Neon
+- Azure-hosted deployment setup for the platform
 - Design of a modular workflow covering collection, processing, storage, and presentation
 - Documentation of system architecture, data pipeline design, and database structure
 - Preparation of screenshots and supporting materials to show product maturity

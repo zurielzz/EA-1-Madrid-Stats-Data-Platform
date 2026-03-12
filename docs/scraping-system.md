@@ -2,7 +2,7 @@
 
 ## Purpose of the Scrapers
 
-The scraping system exists to collect football data that is needed to keep MadridStats current. Its role is to gather source information for matches, player metrics, standings, and related analytics inputs, then pass that data into the processing pipeline for validation and storage.
+The scraping system exists to collect football data that is needed to keep MadridStats current. Its role is to gather source information for matches, player metrics, standings, and related analytics inputs, then pass that data into the processing pipeline for validation and storage. The scrapers were built from scratch in Python and are supported by FastAPI-based service logic around the pipeline.
 
 ## Why Sports Data Needs Timely Updates
 
@@ -17,6 +17,8 @@ The update system is best managed through scheduled execution rather than manual
 - lower-frequency maintenance jobs for less volatile metadata
 
 This strategy helps prioritize freshness where it matters most while keeping infrastructure usage controlled.
+
+In operational terms, this also fits well with an Azure-hosted deployment model, where scheduled jobs and application services can be managed as separate responsibilities.
 
 ## Reliability and Error Handling
 

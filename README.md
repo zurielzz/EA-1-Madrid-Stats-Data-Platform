@@ -23,8 +23,10 @@ This repository exists as the public academic documentation layer for the Madrid
 - Standings and recent form views for contextual team analysis
 - Data scraping and scheduled update workflows
 - Structured processing and normalization before persistence
-- Database-oriented design for analytics queries
-- Full stack application support for modern web presentation, including a Next.js-based frontend direction
+- PostgreSQL relational database design hosted with Neon
+- Full stack web application built with React and TypeScript
+- Python and FastAPI services supporting scraping and data delivery workflows
+- Azure-based hosting for deployed platform infrastructure
 - Architecture that can be adapted for media, publishing, and customer website integrations
 
 ## Repository Structure
@@ -55,11 +57,11 @@ EA-1-Madrid-Stats-Data-Platform/
 At a high level, MadridStats follows a modular pipeline:
 
 1. Data collection services gather match, player, competition, and standings data.
-2. Processing and normalization logic validates and reshapes the raw inputs.
-3. A relational database stores structured football entities and analytics records.
-4. A web application, planned around a modern Next.js stack, queries this data to present dashboards and football insights to users.
+2. Python and FastAPI processing services validate and reshape the raw inputs.
+3. A Neon-hosted PostgreSQL database stores structured football entities and analytics records.
+4. A React and TypeScript web application queries this data to present dashboards and football insights to users.
 
-This separation keeps the system easier to maintain, test, extend, and adapt to future leagues, data sources, customer requirements, and partner-facing delivery needs.
+The platform is hosted on Azure, and this separation keeps the system easier to maintain, test, extend, and adapt to future leagues, data sources, customer requirements, and partner-facing delivery needs.
 
 Further documentation:
 

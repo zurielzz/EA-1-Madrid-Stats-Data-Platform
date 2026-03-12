@@ -14,7 +14,7 @@ Caching would improve responsiveness for frequently accessed dashboards, standin
 
 ## APIs
 
-As the platform matures, a formal API layer would create a cleaner separation between data services and presentation. It would also make the system easier to support across web, mobile, internal tools, customer websites, and partner-facing integrations.
+As the platform matures, a formal API layer would create a cleaner separation between data services and presentation. The current Python and FastAPI foundation is a practical base for that evolution. It would also make the system easier to support across web, mobile, internal tools, customer websites, and partner-facing integrations.
 
 ## Worker Queues
 
@@ -29,7 +29,7 @@ Monitoring is one of the clearest future investment areas. The platform would be
 - alerting for stale datasets
 - frontend and backend performance observation
 
-Earlier monitoring would reduce operational risk and make troubleshooting faster as system complexity increases.
+Earlier monitoring would reduce operational risk and make troubleshooting faster as system complexity increases, especially across Azure-hosted services, scraping jobs, and database operations.
 
 ## Machine Learning Prediction Features
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-MadridStats is best supported by a relational database because football analytics depends on structured entities and well-defined relationships. Matches connect to teams, players belong to teams, competitions contain standings, and statistical records must remain traceable to a clear context. A relational model supports these patterns cleanly while remaining flexible for analytics-oriented querying.
+MadridStats is best supported by a relational database because football analytics depends on structured entities and well-defined relationships. The project uses PostgreSQL hosted on Neon. Matches connect to teams, players belong to teams, competitions contain standings, and statistical records must remain traceable to a clear context. A relational model supports these patterns cleanly while remaining flexible for analytics-oriented querying.
 
 ## Core Entities
 
