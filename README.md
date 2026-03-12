@@ -71,7 +71,7 @@ Further documentation:
 
 ## Proof of Participation
 
-Evidence of my work on the project is documented in [participation-evidence.md](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/proof/participation-evidence.md). The screenshots folder is reserved for interface captures and other visual proof that support the assignment deliverable without exposing private implementation details.
+Evidence of my work on the project is documented in [participation-evidence.md](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/proof/participation-evidence.md). Public proof also includes the live project reference at [madridstats.com](https://madridstats.com), which demonstrates the existence of the product itself without exposing the private production repository. The screenshots folder is reserved for interface captures and other visual proof that support the assignment deliverable without exposing private implementation details.
 
 ## Reflection Report
 

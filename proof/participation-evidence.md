@@ -6,6 +6,7 @@ I worked on MadridStats as an extracurricular technological activity centered on
 
 ## Project Evidence
 
+- Public project reference: [madridstats.com](https://madridstats.com)
 - Development of a custom soccer analytics platform focused on Real Madrid data
 - Design of a modular workflow covering collection, processing, storage, and presentation
 - Documentation of system architecture, data pipeline design, and database structure
@@ -23,4 +24,4 @@ I worked on MadridStats as an extracurricular technological activity centered on
 
 ## Privacy and Intellectual Property Note
 
-The private production codebase cannot be shared publicly because it contains intellectual property and collaboration-sensitive material. This repository is therefore limited to documentation and supporting evidence that demonstrate participation without exposing protected implementation details.
+The private production codebase cannot be shared publicly because it contains intellectual property and collaboration-sensitive material. This repository is therefore limited to documentation and supporting evidence that demonstrate participation without exposing protected implementation details. The public site [madridstats.com](https://madridstats.com) serves as an additional proof point for the existence and ownership of the project.
