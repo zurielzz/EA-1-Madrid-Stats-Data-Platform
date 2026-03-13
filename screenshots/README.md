@@ -8,10 +8,17 @@ Suggested filenames:
 - `player-stats.png`
 - `match-page.png`
 - `standings.png`
+- `github-private-repo-proof.png`
+- `azure-hosting-proof.png`
 
 These images serve two purposes:
 
 - they demonstrate proof of participation in the project
 - they show the maturity and direction of the product without exposing private source code
 
-When adding screenshots, prefer clear captures that show dashboards, tables, analytics views, or other interface elements that help document the platform professionally.
+Recommended evidence additions:
+
+- `github-private-repo-proof.png`: screenshot of the private MadridStats repository under my GitHub account
+- `azure-hosting-proof.png`: screenshot of Azure resources showing the project deployment environment
+
+When adding screenshots, prefer clear captures that show dashboards, tables, analytics views, repository ownership, or deployment context that helps document the platform professionally.
