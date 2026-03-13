@@ -10,7 +10,7 @@ The pipeline begins with source acquisition. Relevant inputs include match resul
 
 ## Scraping
 
-Scraping jobs gather raw data from public or permitted sources and convert it into intermediate records. In MadridStats, this layer is custom-built in Python and integrated into the broader service workflow through FastAPI. This stage is responsible for handling source-specific extraction logic, request timing, and update cadence. In a football context, scraping must account for pre-match, live-match, and post-match changes that can affect standings, lineups, statistics, and event summaries.
+Scraping jobs gather raw data from public or permitted sources and convert it into intermediate records. This stage is responsible for handling extraction logic, request timing, and update cadence. In a football context, scraping must account for pre-match, live-match, and post-match changes that can affect standings, lineups, statistics, and event summaries.
 
 ## Transformation
 
@@ -22,11 +22,11 @@ Normalization ensures that the same team, player, or competition is represented 
 
 ## Database Insertion
 
-Once records pass validation, they are inserted or updated in the database. MadridStats uses a PostgreSQL relational database hosted on Neon, so the goal is to maintain a clean source of truth while avoiding duplicates and preserving historical context where needed. Insert and update logic must respect relationships between matches, players, teams, competitions, and derived analytics tables.
+Once records pass validation, they are inserted or updated in the database. The goal is to maintain a clean source of truth while avoiding duplicates and preserving historical context where needed. Insert and update logic must respect relationships between matches, players, teams, competitions, and derived analytics tables.
 
 ## Querying by the Frontend
 
-The frontend depends on this pipeline to serve stable, queryable data rather than raw scraped content. Because the data has already been cleaned and normalized, the React and TypeScript application can focus on presentation, filtering, and comparison workflows instead of compensating for upstream inconsistencies. This is especially important when the output is intended for a polished full stack product or external customer integration.
+The frontend depends on this pipeline to serve stable, queryable data rather than raw scraped content. Because the data has already been cleaned and normalized, the application can focus on presentation, filtering, and comparison workflows instead of compensating for upstream inconsistencies. This is especially important when the output is intended for a polished product or external customer integration.
 
 ## Reliability Considerations
 
@@ -41,3 +41,5 @@ Reliability in a sports data pipeline depends on repeatability, validation, and 
 ## Why Scheduled Execution Matters
 
 Scheduled execution is especially important in football analytics because the value of the data depends on timing. Match results, standings, player statistics, and recent form can change rapidly around fixtures. A schedule-based pipeline makes it possible to refresh high-priority data near match times while running lower-priority updates at less frequent intervals. This creates a practical balance between freshness, system load, and operational stability.
+
+Specific operational details are intentionally excluded from this public repository.

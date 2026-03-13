@@ -6,23 +6,23 @@ MadridStats is structured as a modular soccer analytics platform with clear sepa
 
 ## Data Collection Layer
 
-The data collection layer is responsible for acquiring football data such as match results, player performance records, standings, and recent form indicators. This layer is built around custom Python scrapers that can be run on a schedule and adapted as source formats change. Separating collection from the rest of the system reduces risk when an upstream website or feed changes.
+The data collection layer is responsible for acquiring football data such as match results, player performance records, standings, and recent form indicators. This layer is built around custom scraping components that can be run on a schedule and adapted as source formats change. Separating collection from the rest of the system reduces risk when an upstream website or feed changes.
 
 ## Data Processing and Normalization
 
-Raw sports data is rarely consistent enough to expose directly to end users. The processing layer, supported through Python and FastAPI services, cleans inputs, standardizes naming conventions, resolves entity relationships, and converts source-specific structures into a format that can be stored and queried reliably. This layer also handles duplicate prevention, field validation, and transformation into analytics-friendly records.
+Raw sports data is rarely consistent enough to expose directly to end users. The processing layer cleans inputs, standardizes naming conventions, resolves entity relationships, and converts source-specific structures into a format that can be stored and queried reliably. This layer also handles duplicate prevention, field validation, and transformation into analytics-friendly records.
 
 ## Database Layer
 
-The database layer stores structured entities such as teams, players, competitions, matches, standings, and statistical summaries. MadridStats uses a PostgreSQL relational database hosted with Neon. A relational design is appropriate because the platform depends on strong relationships between entities and repeatable query patterns. The database acts as the stable source of truth between ingestion workflows and the frontend application.
+The database layer stores structured entities such as teams, players, competitions, matches, standings, and statistical summaries. A relational design is appropriate because the platform depends on strong relationships between entities and repeatable query patterns. The database acts as the stable source of truth between ingestion workflows and the frontend application.
 
 ## Frontend Application Layer
 
-The frontend application consumes processed data from the backend or database-facing services and presents it through dashboards, tables, and visual summaries. The application is built with React and TypeScript, which supports a maintainable UI layer and clear typing across frontend logic. This layer focuses on usability, fast access to football insights, and clear navigation across team-level and player-level analytics. Keeping the presentation layer separate allows the user experience to evolve without disrupting ingestion or storage logic.
+The frontend application consumes processed data from the backend or database-facing services and presents it through dashboards, tables, and visual summaries. This layer focuses on usability, fast access to football insights, and clear navigation across team-level and player-level analytics. Keeping the presentation layer separate allows the user experience to evolve without disrupting ingestion or storage logic.
 
 ## Infrastructure and Scheduling
 
-Football data changes continuously across fixtures, standings, and player performance. For that reason, MadridStats is designed around scheduled execution for recurring updates. Jobs can be triggered at regular intervals and around important match windows to keep the platform current. The deployed platform is hosted on Azure, and the separation between scheduled jobs, application services, storage, and frontend delivery improves reliability and simplifies operational management.
+Football data changes continuously across fixtures, standings, and player performance. For that reason, MadridStats is designed around scheduled execution for recurring updates. Jobs can be triggered at regular intervals and around important match windows to keep the platform current. Separation between scheduled jobs, application services, storage, and frontend delivery improves reliability and simplifies operational management.
 
 ## Why This Modular Architecture Was Chosen
 
@@ -34,3 +34,5 @@ This architecture was chosen for four practical reasons:
 - It aligns with production-minded engineering. The platform is easier to document, test, and reason about when data flow is explicit.
 
 For an analytics product, modularity is not just an architectural preference. It is the basis for reliable updates, consistent outputs, and sustainable long-term development.
+
+Some implementation details are intentionally omitted here because they belong to the project’s private technical and operational documentation.

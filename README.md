@@ -1,8 +1,8 @@
 # MadridStats Football Analytics Platform
 
-MadridStats is a custom soccer analytics and data pipeline project centered on automated collection, processing, storage, and presentation of football data. The platform is designed to gather match statistics, player performance data, standings, recent form, and related analytics, then expose that information through a modern full stack web application.
+MadridStats is a custom soccer analytics and data pipeline project focused on collecting, organizing, and presenting football data in a professional product setting. The platform is designed to handle match statistics, player performance data, standings, recent form, and related analytics through a modern web application experience.
 
-The project reflects my long-term goals in software engineering, sports data systems, analytics platforms, and product development. It is especially focused on building a reusable and commercially relevant soccer data pipeline that can support websites, media products, and other customer-facing digital experiences.
+This project reflects my long-term goals in software engineering, sports data systems, analytics platforms, and real-world product development. It is especially focused on building a reusable and commercially relevant soccer data pipeline that can support websites, media products, and other customer-facing digital experiences.
 
 The production codebase is private due to intellectual property, client-facing development, and collaboration constraints. The live implementation includes proprietary work connected to an upcoming collaboration with a major sports media outlet with a multi-million social audience, so this repository is intentionally limited to documentation, diagrams, screenshots, reflection, and proof of participation.
 
@@ -16,6 +16,8 @@ This repository exists as the public academic documentation layer for the Madrid
 - assignment deliverables, diagrams, and supporting evidence
 - critical reflection on technical decisions, quality, and professional growth
 
+It is not a public mirror of the private production system.
+
 ## Features
 
 - Automated soccer data collection and analytics workflows
@@ -23,11 +25,15 @@ This repository exists as the public academic documentation layer for the Madrid
 - Standings and recent form views for contextual team analysis
 - Data scraping and scheduled update workflows
 - Structured processing and normalization before persistence
-- PostgreSQL relational database design hosted with Neon
-- Full stack web application built with React and TypeScript
-- Python and FastAPI services supporting scraping and data delivery workflows
-- Azure-based hosting for deployed platform infrastructure
+- Relational database design for structured analytics queries
+- Full stack web application for modern football data presentation
+- Service-oriented backend support for scraping and data delivery workflows
+- Cloud-hosted deployment infrastructure
 - Architecture that can be adapted for media, publishing, and customer website integrations
+
+## Academic Context
+
+I am using MadridStats as the extracurricular technological activity for this assignment. It demonstrates practical work in software engineering, analytics, and sports technology while also showing how I approach independent technical development, product thinking, and engineering documentation.
 
 ## Repository Structure
 
@@ -45,7 +51,10 @@ EA-1-Madrid-Stats-Data-Platform/
 │   ├── data-flow-diagram.md
 │   └── database-schema.md
 ├── screenshots/
-│   └── README.md
+│   ├── README.md
+│   ├── azure-hosting-proof.png
+│   ├── github-private-repo-proof.png
+│   └── madridstats-live-proof.png
 ├── reflection/
 │   └── reflection-report.md
 └── proof/
@@ -57,13 +66,13 @@ EA-1-Madrid-Stats-Data-Platform/
 At a high level, MadridStats follows a modular pipeline:
 
 1. Data collection services gather match, player, competition, and standings data.
-2. Python and FastAPI processing services validate and reshape the raw inputs.
-3. A Neon-hosted PostgreSQL database stores structured football entities and analytics records.
-4. A React and TypeScript web application queries this data to present dashboards and football insights to users.
+2. Processing services validate and reshape the raw inputs.
+3. A relational database stores structured football entities and analytics records.
+4. A web application queries this data to present dashboards and football insights to users.
 
-The platform is hosted on Azure, and this separation keeps the system easier to maintain, test, extend, and adapt to future leagues, data sources, customer requirements, and partner-facing delivery needs.
+This separation keeps the system easier to maintain, test, extend, and adapt to future leagues, data sources, customer requirements, and partner-facing delivery needs.
 
-Further documentation:
+Supporting documents:
 
 - [System Architecture](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/docs/system-architecture.md)
 - [Data Pipeline](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/docs/data-pipeline.md)
@@ -73,7 +82,7 @@ Further documentation:
 
 ## Proof of Participation
 
-Evidence of my work on the project is documented in [participation-evidence.md](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/proof/participation-evidence.md). Public proof also includes the live project reference at [madridstats.com](https://madridstats.com), which demonstrates the existence of the product itself without exposing the private production repository. The screenshots folder is reserved for interface captures and other visual proof that support the assignment deliverable without exposing private implementation details.
+Evidence of my work on the project is documented in [participation-evidence.md](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/proof/participation-evidence.md). Public proof also includes the live project reference at [madridstats.com](https://madridstats.com) and screenshot evidence stored in [screenshots/](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/screenshots/README.md), including repository ownership, hosting context, and product interface captures.
 
 ## Reflection Report
 
