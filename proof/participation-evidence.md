@@ -12,7 +12,7 @@ I worked on MadridStats as an extracurricular technological activity centered on
 - Screenshot evidence of the live MadridStats product interface, showing the platform itself as a working proof artifact
 - Development of a custom soccer analytics platform focused on Real Madrid data
 - Independent implementation of the pipeline, application architecture, and supporting systems
-- Python and FastAPI scraper and service layer development
+- Python and FastAPI data gathering and service layer development
 - React and TypeScript frontend application development
 - PostgreSQL relational database design hosted with Neon
 - Azure-hosted deployment setup for the platform

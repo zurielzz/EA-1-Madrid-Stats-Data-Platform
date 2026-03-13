@@ -6,7 +6,7 @@ MadridStats is structured as a modular soccer analytics platform with clear sepa
 
 ## Data Collection Layer
 
-The data collection layer is responsible for acquiring football data such as match results, player performance records, standings, and recent form indicators. This layer is built around custom scraping components that can be run on a schedule and adapted as source formats change. Separating collection from the rest of the system reduces risk when an upstream website or feed changes.
+The data collection layer is responsible for acquiring football data such as match results, player performance records, standings, and recent form indicators. This layer is built around custom data gathering components that can be run on a schedule and adapted as source formats change. Separating collection from the rest of the system reduces risk when an upstream website or feed changes.
 
 ## Data Processing and Normalization
 
@@ -28,7 +28,7 @@ Football data changes continuously across fixtures, standings, and player perfor
 
 This architecture was chosen for four practical reasons:
 
-- It isolates change. Source volatility in scraping does not force changes across the whole system.
+- It isolates change. Source volatility in data gathering does not force changes across the whole system.
 - It improves maintainability. Each layer has a focused responsibility and clearer failure boundaries.
 - It supports growth. New competitions, statistics, customer requirements, or partner requirements can be added with less rework.
 - It aligns with production-minded engineering. The platform is easier to document, test, and reason about when data flow is explicit.

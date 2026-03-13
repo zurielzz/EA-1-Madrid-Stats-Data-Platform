@@ -23,11 +23,11 @@ It is not a public mirror of the private production system.
 - Automated soccer data collection and analytics workflows
 - Player performance tracking and trend analysis
 - Standings and recent form views for contextual team analysis
-- Data scraping and scheduled update workflows
+- Data gathering and scheduled update workflows
 - Structured processing and normalization before persistence
 - Relational database design for structured analytics queries
 - Full stack web application for modern football data presentation
-- Service-oriented backend support for scraping and data delivery workflows
+- Service-oriented backend support for data gathering and delivery workflows
 - Cloud-hosted deployment infrastructure
 - Architecture that can be adapted for media, publishing, and customer website integrations
 
@@ -44,7 +44,7 @@ EA-1-Madrid-Stats-Data-Platform/
 │   ├── system-architecture.md
 │   ├── data-pipeline.md
 │   ├── database-design.md
-│   ├── scraping-system.md
+│   ├── data-gathering-system.md
 │   └── scalability-plan.md
 ├── diagrams/
 │   ├── architecture-diagram.md
@@ -71,14 +71,6 @@ At a high level, MadridStats follows a modular pipeline:
 4. A web application queries this data to present dashboards and football insights to users.
 
 This separation keeps the system easier to maintain, test, extend, and adapt to future leagues, data sources, customer requirements, and partner-facing delivery needs.
-
-Supporting documents:
-
-- [System Architecture](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/docs/system-architecture.md)
-- [Data Pipeline](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/docs/data-pipeline.md)
-- [Database Design](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/docs/database-design.md)
-- [Scraping System](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/docs/scraping-system.md)
-- [Scalability Plan](/Users/zurielhernandez/EA-1-Madrid-Stats-Data-Platform/docs/scalability-plan.md)
 
 ## Proof of Participation
 

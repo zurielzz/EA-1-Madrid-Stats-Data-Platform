@@ -3,7 +3,7 @@
 ```mermaid
 flowchart TD
     A[Match and Player Data Sources]
-    B[Scraping Jobs]
+    B[Data Gathering Jobs]
     C[Raw Records]
     D[Transformation]
     E[Normalization and Validation]

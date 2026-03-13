@@ -8,9 +8,9 @@ The MadridStats data pipeline transforms raw football information into structure
 
 The pipeline begins with source acquisition. Relevant inputs include match results, player performance data, competition tables, recent form indicators, and event-level updates. These sources may differ in structure, naming conventions, and update frequency, so collection is treated as a controlled ingestion step rather than a direct feed into the application.
 
-## Scraping
+## Data Gathering
 
-Scraping jobs gather raw data from public or permitted sources and convert it into intermediate records. This stage is responsible for handling extraction logic, request timing, and update cadence. In a football context, scraping must account for pre-match, live-match, and post-match changes that can affect standings, lineups, statistics, and event summaries.
+Data gathering jobs fetch raw data from public or permitted sources and convert it into intermediate records. This stage is responsible for handling extraction logic, request timing, and update cadence. In a football context, data collection must account for pre-match, live-match, and post-match changes that can affect standings, lineups, statistics, and event summaries.
 
 ## Transformation
 
@@ -26,7 +26,7 @@ Once records pass validation, they are inserted or updated in the database. The 
 
 ## Querying by the Frontend
 
-The frontend depends on this pipeline to serve stable, queryable data rather than raw scraped content. Because the data has already been cleaned and normalized, the application can focus on presentation, filtering, and comparison workflows instead of compensating for upstream inconsistencies. This is especially important when the output is intended for a polished product or external customer integration.
+The frontend depends on this pipeline to serve stable, queryable data rather than raw source content. Because the data has already been cleaned and normalized, the application can focus on presentation, filtering, and comparison workflows instead of compensating for upstream inconsistencies. This is especially important when the output is intended for a polished product or external customer integration.
 
 ## Reliability Considerations
 

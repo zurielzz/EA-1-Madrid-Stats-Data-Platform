@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart LR
-    A[Data Sources] --> B[Scrapers]
+    A[Data Sources] --> B[Data Gathering Jobs]
     B --> C[Processing and Normalization]
     C --> D[Relational Database]
     D --> E[Web Application]
