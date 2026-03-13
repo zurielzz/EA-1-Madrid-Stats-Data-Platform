@@ -8,13 +8,9 @@ MadridStats is currently documented around a focused football analytics use case
 
 A natural scaling path is adding additional leagues, cups, and seasonal datasets. This requires collection logic that can support multiple competition contexts, database models that handle broader scope cleanly, and application views that remain understandable as the dataset grows.
 
-## Caching
+## Proprietary Pipeline Advantage
 
-Caching would improve responsiveness for frequently accessed dashboards, standings pages, and player views. Not all football data changes at the same pace, so selective caching can reduce repeated database work while preserving freshness where near-real-time updates matter most.
-
-## APIs
-
-As the platform matures, a formal API layer would create a cleaner separation between data services and presentation. The current Python and FastAPI foundation is a practical base for that evolution. It would also make the system easier to support across web, mobile, internal tools, customer websites, and partner-facing integrations.
+One of the main reasons for building MadridStats this way is to avoid depending on third-party APIs that can be limited, expensive, delayed, or too shallow for advanced analytics use cases. The custom pipeline gives me more control over the type of data collected, the frequency of updates, and the depth of football information that can be delivered to customers. That independence is also part of the product value, because it makes the platform more adaptable for clients who need specialized data rather than generic feed access.
 
 ## Worker Queues
 
